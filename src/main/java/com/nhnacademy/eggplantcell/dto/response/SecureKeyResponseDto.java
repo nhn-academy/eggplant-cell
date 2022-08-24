@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * 설명작성란
+ * 시큐어 키 매니저 응답 dto 입니다.
  *
  * @author : 김보민
  * @since 1.0

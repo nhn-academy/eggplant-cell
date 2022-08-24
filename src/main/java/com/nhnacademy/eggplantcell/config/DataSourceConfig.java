@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 설명작성란
+ * 데이터소스 환경설정 클래스입니다.
  *
  * @author : 김보민
  * @since 1.0

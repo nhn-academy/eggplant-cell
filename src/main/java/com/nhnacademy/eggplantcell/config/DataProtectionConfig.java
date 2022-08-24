@@ -1,6 +1,7 @@
 package com.nhnacademy.eggplantcell.config;
 
 import com.nhnacademy.eggplantcell.dto.response.SecureKeyResponseDto;
+import com.nhnacademy.eggplantcell.error.SecureDataLoadFailureException;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.KeyStore;
@@ -23,7 +24,7 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * 설명작성란
+ * 시큐어 데이터 환경설정 클래스입니다.
  *
  * @author : 김보민
  * @since 1.0
@@ -97,7 +98,7 @@ public class DataProtectionConfig {
                     .getSecret();
         } catch (CertificateException | NoSuchAlgorithmException | KeyStoreException
                 | UnrecoverableKeyException | IOException | KeyManagementException e) {
-            throw new RuntimeException();
+            throw new SecureDataLoadFailureException();
         }
     }
 
