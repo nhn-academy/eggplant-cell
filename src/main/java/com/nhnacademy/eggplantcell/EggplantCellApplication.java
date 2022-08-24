@@ -10,5 +10,4 @@ public class EggplantCellApplication {
         SpringApplication.run(EggplantCellApplication.class, args);
     }
 
-
 }
